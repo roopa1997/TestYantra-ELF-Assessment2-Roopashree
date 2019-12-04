@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./display.css">
+    <link rel="stylesheet" href="./testBS/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick=home() id="homePage">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick=createaccountclicked()>Create Account</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" onclick=showAccountClicked()>Show Account</a>
+                </li>
+                <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick=login()>Login</a>
+                    </li>
+                
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container" id="c3">
+        <img src="./Digha-West-Bengal.jpg" id="img1 " alt="">
+    </div>
+    <div class="container" id="c2" >
+<!--   <h3 style="text-align: center;">Please fill form..</h3>
+ -->
+        <form name="userForm" class="formclass invisible" id="form1" >
+            <div class="card ">
+                <div class="form-group col-md-6 offset-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="enter name">
+                    <p id="p1 " class="invisible"> enter a valid name</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" placeholder="enter age">
+                    <p id="p2" class=" invisible">enter a valid age</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="enter email">
+                    <p id="p3 " class=" invisible">enter a valid email</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control" id="number" name="phone" placeholder="enter number">
+                    <p id="p4" class=" invisible">enter a valid number</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="enter password">
+                        <p id="p5" class=" invisible">enter password correctly</p>
+                    </div>
+                <div class="form-group col-md-6 offset-3">
+                    <div class="row">
+                        <div class="col-md-6"><button type="button" id="formSubmitButton"
+                                class="btn btn-success">Submit</button>
+                        </div>
+                        <div class="col-md-6"><button type="button" id="formClearButton"
+                                class="btn btn-success float-right">Clear</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="container" id="c4">
+    </div>
+    <div class="container " id="c1">
+        <div class="container mt-4 " id="c4">
+            <table class="table " id="table">
+                <thead class="thead-dark">
+                    <tr>
+
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col" >password</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+    <!-- resultant table -->
+
+    <script src="./display.js"></script>
+</body>
+
+</html>

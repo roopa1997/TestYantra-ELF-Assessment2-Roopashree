@@ -1,0 +1,36 @@
+.p1{
+    visibility: visible;
+}
+.p2{
+    visibility: visible;
+}
+.p3{
+    visibility: visible;
+}
+.p4{
+    visibility: visible;
+}
+.p5{
+    visibility: visible;
+   
+}
+/* .table{
+    visibility: visible;
+
+} */
+img{
+    height: 400px;
+    width: 300px;
+}
+.form{
+    visibility: visible;
+ 
+}
+.table{
+    visibility: invisible;
+ 
+}
+img{
+    margin-left: 37%;
+    margin-top: 5%;
+}

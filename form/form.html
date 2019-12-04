@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form.css">
+
+</head>
+
+<body>
+    
+    <div class="container  mt-5" id="c1">
+        <h3 style="text-align: center;">Please fill form..</h3>
+
+        <form name="userForm">
+            <div class="card ">
+                <div class="form-group col-md-6 offset-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="enter name">
+                    <p id="p1 " class="invisible"> enter a valid name</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control" id="age" name="age" placeholder="enter age">
+                    <p id="p2" class=" invisible">enter a valid age</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" name="email" placeholder="enter email">
+                    <p id="p3 "class=" invisible">enter a valid email</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <label for="phone">Phone</label>
+                    <input type="number" class="form-control" id="number" name="phone" placeholder="enter number">
+                    <p id="p4" class=" invisible">enter a valid number</p>
+                </div>
+                <div class="form-group col-md-6 offset-3">
+                    <div class="row">
+                        <div class="col-md-6"><button type="button" id="formSubmitButton" class="btn btn-success">Submit</button></div>
+                        <div class="col-md-6"><button type="button" id="formClearButton" class="btn btn-success float-right">Clear</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="container mt-4 " id="c2">
+            <table class="table " id="table">
+                    <thead class="thead-dark">
+                      <tr>
+                        
+                        <th scope="col">Name</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                    </tbody>
+                  </table>
+                  
+    </div>
+
+
+    <script src="./form.js"></script>
+</body>
+
+</html>
